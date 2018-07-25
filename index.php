@@ -58,7 +58,8 @@ $g = new Goods;
                             			</div>
 			 							<div class="product-desc">
 			                                <span class="product-price">
-			                                    <?=$g->getPrice($row['id'],$_GET['sortTo'])?>
+			                                    <?=$g->getPrice($row['id'],$_GET['sortTo'])?> <i class="fa
+fa-rub"></i>
 			                                </span>
 			                                <small class="text-muted"><?=$row['category']?></small>
 			                                <a href="view.php?id=<?=$row['id']?>" class="product-name"><?=$row['title']?> </a>
@@ -67,9 +68,10 @@ $g = new Goods;
 			                                </div>
 			                                <div class="m-t text-righ">
 
-			                                    <a href="" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+			                                    <a href="" class="btn btn-xs btn-outline btn-danger">Удалить <i class="fa fa-trash-o"></i> </a>
 			                                    <div class="pull-right">
-			                                    	<a href="edit.php?id=<?=$row['id']?>" class="btn btn-xs btn-outline btn-success">Edit <i class="fa fa-paper-plane-o"></i> </a>
+			                                    	<a href="edit.php?id=<?=$row['id']?>" class="btn btn-xs btn-outline btn-success">Редактировать <i class="fa
+fa-pencil-square"></i> </a>
 			                                	</div>
 			                                </div>
 			                            </div>

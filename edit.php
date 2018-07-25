@@ -180,7 +180,7 @@ $data['PricePeriod'] = $g->getPricePeriod($_GET["id"]);
 
                                             </table>
                                         </div>
-
+                                        <a href="index.php" class="btn btn-info" >Назад</a>
                                     </div>
                                 </div>
                                 <div id="tab-4" class="tab-pane">
@@ -189,7 +189,7 @@ $data['PricePeriod'] = $g->getPricePeriod($_GET["id"]);
                                         <div class="table-responsive">
                                           
                                         </div>
-
+                                        <a href="index.php" class="btn btn-info" >Назад</a>
                                     </div>
                                 </div>
                             
