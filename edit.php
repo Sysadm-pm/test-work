@@ -51,51 +51,42 @@ $data['product'] = $data['0'];
                                 <li class=""><a data-toggle="tab" href="#tab-3"> Расписание цен</a></li>
                                 <li class=""><a data-toggle="tab" href="#tab-4"> График</a></li>
                             </ul>
-                         <form method="POST" id="formEdit">  
+
+</form>
+                        <form method="POST" id="formEdit" action="actionProduct.php" enctype=multipart/form-data>
                             <div class="tab-content">
-                            	 
+
                                 <div id="tab-1" class="tab-pane active">
                                     <div class="panel-body">
 
                                         <fieldset class="form-horizontal">
-                                        	<input type="hidden" class="form-control" placeholder="Product name" value="<?=$_GET["id"]?>" name="id">
-                                            <div class="form-group"><label class="col-sm-2 control-label">Name:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Product name" name="name" value="<?=$data['product']["title"];?>"></div>
+                                            <input type="hidden" class="form-control" placeholder="Product name" value="<?=$_GET["id"]?>" name="id">
+                                            <div class="form-group"><label class="col-sm-1 control-label">Название:</label>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Название продукта" name="title" value="<?=$data['product']["title"];?>"></div>
                                             </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Price:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="$160.00" name="price" value="<?=$data['product']["mainPrice"];?>"></div>
+                                            <div class="form-group"><label class="col-sm-1 control-label">Цена:</label>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="1600.00р" name="mainPrice" value="<?=$data['product']["mainPrice"];?>"></div>
                                             </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Description:</label>
+                                            <div class="form-group"><label class="col-sm-1 control-label">Артикул:</label>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="№ 00000" name="art" value="<?=$data['product']["art"];?>"></div>
+                                            </div>
+                                            <div class="form-group"><label class="col-sm-1 control-label">Описание:</label>
                                                 <div class="col-sm-10">
-                                                     <textarea name="description" id="description" class="summernote form-control" ><?=$data['product']["description"];?></textarea>                                                        
+                                                    <textarea name="description" id="description" class="summernote form-control" ><?=$data['product']["description"];?></textarea>
                                                 </div>
                                             </div>
-                           
-                                            <div class="form-group"><label class="col-sm-2 control-label">ID:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="543"></div>
+                                            <div class="form-group"><label class="col-sm-1 control-label">Категория:</label>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="..." name="category" value="<?=$data['product']["category"];?>"></div>
                                             </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Model:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="..."></div>
+                                            <div class="form-group"><label class="col-sm-1 control-label">Тэги:</label>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Quantity" name="tags" value="<?=$data['product']["tags"];?>"></div>
                                             </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Location:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="location"></div>
+                                            <div>
+                                                <a href="index.php" class="btn btn-info" >Назад</a>
+                                                <button class="btn btn-success pull-right" type="submit">Сохранить</button>
                                             </div>
-                                  
-                                            
-                                            <div class="form-group"><label class="col-sm-2 control-label">Quantity:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Quantity"></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Minimum quantity:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="2"></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Sort order:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="0"></div>
-                                            </div>
-
-<button class="btn btn-white pull-rigth" type="submit"> Succes</button>
-
                                         </fieldset>
-</form>
+                        </form>
 
                                     </div>
                                 </div>

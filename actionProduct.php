@@ -3,11 +3,19 @@ include "goods.php";
 $data = new Goods();
 if (!$_POST['action'])
 {
+    $host  = $_SERVER['HTTP_HOST'];
+    $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $addResult = $data->add($_POST);
+
+    if($addResult){
+        $extra = 'index.php';
+    }else{
+        $extra = 'addProduct.php';
+    }
 //echo "Hi";
-	$host  = $_SERVER['HTTP_HOST'];
-$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-$extra = 'index.php';
-header("Location: http://$host$uri/$extra");
+    header("Location: http://$host$uri/$extra");
+
+
 }
 if ($_POST['action']){
 

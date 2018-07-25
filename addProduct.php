@@ -49,7 +49,6 @@
                                     <div class="panel-body">
 
                                         <fieldset class="form-horizontal">
-                                        	<input type="hidden" class="form-control" placeholder="Product name" value="<?=$_GET["id"]?>" name="id">
                                             <div class="form-group"><label class="col-sm-1 control-label">Название:</label>
                                                 <div class="col-sm-10"><input type="text" class="form-control" placeholder="Название продукта" name="title" value="<?=$data['product']["title"];?>"></div>
                                             </div>
@@ -57,7 +56,7 @@
                                                 <div class="col-sm-10"><input type="text" class="form-control" placeholder="1600.00р" name="mainPrice" value=""></div>
                                             </div>
                                             <div class="form-group"><label class="col-sm-1 control-label">Артикул:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="№ 00000"></div>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="№ 00000" name="art"></div>
                                             </div>
                                             <div class="form-group"><label class="col-sm-1 control-label">Описание:</label>
                                                 <div class="col-sm-10">
@@ -65,12 +64,12 @@
                                                 </div>
                                             </div>
                                             <div class="form-group"><label class="col-sm-1 control-label">Категория:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="..."></div>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="..." name="category"></div>
                                             </div>
-                                      <!--       <div class="form-group"><label class="col-sm-2 control-label">Quantity:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Quantity"></div>
+                                           <div class="form-group"><label class="col-sm-2 control-label">Тэги:</label>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Quantity" name="tags"></div>
                                             </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Minimum quantity:</label>
+                                         <!--     <div class="form-group"><label class="col-sm-2 control-label">Minimum quantity:</label>
                                                 <div class="col-sm-10"><input type="text" class="form-control" placeholder="2"></div>
                                             </div>
                                             <div class="form-group"><label class="col-sm-2 control-label">Sort order:</label>

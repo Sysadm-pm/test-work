@@ -54,23 +54,20 @@ $g = new Goods;
                     			<div class="ibox">
                         			<div class="ibox-content product-box">
                             			<div class="product-imitation"> 
-											<?=$count?>
+											[image]
                             			</div>
 			 							<div class="product-desc">
 			                                <span class="product-price">
 			                                    <?=$g->getPrice($row['id'],$_GET['sortTo'])?>
 			                                </span>
 			                                <small class="text-muted"><?=$row['category']?></small>
-			                                <a href="#" class="product-name"><?=$row['title']?> </a>
-
-
-
+			                                <a href="view.php?id=<?=$row['id']?>" class="product-name"><?=$row['title']?> </a>
 			                                <div class="small m-t-xs">
-			                                    <?=$row['description']?>
+			                                    <?$row['description']?>
 			                                </div>
 			                                <div class="m-t text-righ">
 
-			                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+			                                    <a href="" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
 			                                    <div class="pull-right">
 			                                    	<a href="edit.php?id=<?=$row['id']?>" class="btn btn-xs btn-outline btn-success">Edit <i class="fa fa-paper-plane-o"></i> </a>
 			                                	</div>

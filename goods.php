@@ -123,6 +123,42 @@ class Goods extends DB
 
         return $this->model->query($sql);
     }
+    public function Add($data)
+    {
+        (int)$id = $data['id'];
+        $title = $this->model->escape(htmlspecialchars($data['title']) );
+        $mainPrice = $this->model->escape($data['mainPrice']);
+        $category = $this->model->escape($data['category']);
+        $art = $this->model->escape($data['art']);
+        $tags = $this->model->escape($data['tags']);
+        $description = $this->model->escape($data['description']);
 
+
+
+        if(!$id)
+        {
+            $sql = "INSERT INTO goods SET
+            title = '{$title}',
+            description = '{$description}',
+            mainPrice = '{$mainPrice}',
+            category = '{$category}',
+            art = '{$art}',
+            tags = '{$tags}'
+            ";
+        }else
+        {
+            $sql = "UPDATE goods SET
+            title = '{$title}',
+            description = '{$description}',
+            mainPrice = '{$mainPrice}',
+            category = '{$category}',
+            art = '{$art}',
+            tags = '{$tags}'
+            WHERE id = {$id}
+                        ";
+        }
+
+        return $this->model->query($sql);
+    }
 
 }
