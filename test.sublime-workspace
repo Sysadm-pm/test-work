@@ -1,0 +1,395 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"price",
+				"getPricePeriod"
+			],
+			[
+				"a",
+				"align\tAttr"
+			],
+			[
+				"su",
+				"submit"
+			],
+			[
+				"bt",
+				"btn-white"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"he",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 3270,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "edit.php",
+			"settings":
+			{
+				"buffer_size": 15894,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<?"
+			}
+		},
+		{
+			"contents": "<?\ninclude \"goods.php\";\nif ($_POST){\n\n\t//var_dump($_POST);\n\tif ($_POST['action'] == 'add'){\n$num= $g->getPricePeriod($_GET[\"id\"]);\n\n\t\t  ?>     \n\t\t    <tr id=\"element_<?=$value['ppid']?>\">\n                                                \t \n                                                   <td align=\"center\">\n                                                        <?=$value['ppid']?>\n                                                    </td>\n                                                   \n                                                    <td>\n                                                        <input type=\"text\" class=\"form-control\" name=\"price\" placeholder=\"$10.00\" value=\"<?=$value['price']?>\">\n                                                    </td>\n                                                    <td>\n                                                        <div class=\"input-group date\">\n                                                            <span class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></span><input type=\"text\" name=\"startDate\" class=\"form-control\" value=\"<?=substr($value['startDate'], 0, 10)?>\">\n                                                        </div>\n                                                    </td>\n                                                    <td>\n                                                        <div class=\"input-group date\">\n                                                            <span class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></span><input type=\"text\" name=\"endDate\" class=\"form-control\" value=\"<?=substr($value['endDate'], 0, 10)?>\">\n                                                        </div>\n                                                    </td>\n                                                    <td align=\"center\">\n                                                        <a class=\"btn btn-white\" onclick=\"callAction('delete','<?=$value['ppid']?>')\"><i class=\"fa fa-trash\"></i> </a>\n                                                        <button type=\"submit\" class=\"btn btn-white\"><i class=\"fa fa-refresh\"></i> </button>\n                                                    </td>\n                                                \t\n                                                </tr>\n                                                <?\n\t}\n}\n?>",
+			"file": "actionProduct.php",
+			"file_size": 2335,
+			"file_write_time": 131769189527188912,
+			"settings":
+			{
+				"buffer_size": 2366,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<?"
+			}
+		},
+		{
+			"file": "goods.php",
+			"settings":
+			{
+				"buffer_size": 2091,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "db.class.php",
+			"settings":
+			{
+				"buffer_size": 931,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "class DB"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/OSPanel/domains/test/index.php",
+		"/D/OSPanel/domains/test/index.html"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"file",
+			"var_dump"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3250,
+								3250
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "edit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8883,
+								8883
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2181.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "actionProduct.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								2307
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "goods.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								709,
+								709
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 543.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "db.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class DB",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "test.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
