@@ -66,8 +66,8 @@
                                             <div class="form-group"><label class="col-sm-1 control-label">Категория:</label>
                                                 <div class="col-sm-10"><input type="text" class="form-control" placeholder="..." name="category"></div>
                                             </div>
-                                           <div class="form-group"><label class="col-sm-2 control-label">Тэги:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Quantity" name="tags"></div>
+                                           <div class="form-group"><label class="col-sm-1 control-label">Тэги:</label>
+                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Вводите теги через запятую." name="tags"></div>
                                             </div>
                                          <!--     <div class="form-group"><label class="col-sm-2 control-label">Minimum quantity:</label>
                                                 <div class="col-sm-10"><input type="text" class="form-control" placeholder="2"></div>
